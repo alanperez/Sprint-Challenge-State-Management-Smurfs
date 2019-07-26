@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import { connect } from 'react-redux'
 import Smurfs from './Smurfs'
+import SmurfForm from './SmurfForm'
 import {getSmurf} from '../redux/actions/smurfAction'
 const App = (props) =>  {
   
@@ -32,7 +33,7 @@ const App = (props) =>  {
         <h4>{props.smurfs.map(smurf => {
           return <Smurfs smurf={smurf} />
         })}</h4>
-         
+         <SmurfForm />
       </div>
     );
 }
